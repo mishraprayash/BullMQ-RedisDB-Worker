@@ -7,8 +7,8 @@ const createTransporter = () => {
         port: 2525,
         auth: {
             user: process.env.AUTH_USER,
-            pass: process.env.AUTH_PASSWORD,
-        },
+            pass: process.env.AUTH_PASSWORD
+        }
     });
 }
 
