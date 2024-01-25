@@ -1,5 +1,5 @@
 const { Worker } = require("bullmq");
-const  createTransporter  = require("../mailservice/transporter");
+const createTransporter = require("../mailservice/transporter");
 
 
 const emailWorker = new Worker('email-queue', async (job) => {
@@ -10,7 +10,7 @@ const emailWorker = new Worker('email-queue', async (job) => {
     {
         connection: {
             host: process.env.REDIS_HOST,
-            port: 12057,
+            port: 12058,
             username: process.env.REDIS_USERNAME,
             password: process.env.REDIS_PASSWORD
         }
