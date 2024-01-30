@@ -10,7 +10,7 @@ const sendEmail = async () => {
         {
             connection: {
                 host: process.env.REDIS_HOST,
-                port: 12057,
+                port: 12058,
                 username: process.env.REDIS_USERNAME,
                 password: process.env.REDIS_PASSWORD,
                 tls: true,
