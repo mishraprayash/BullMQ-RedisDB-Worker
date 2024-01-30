@@ -1,5 +1,5 @@
 const { Worker } = require("bullmq");
-const createTransporter = require("../mailservice/transporter");
+const createTransporter = require("./transporter");
 
 const sendEmail = async () => {
     const emailWorker = new Worker('email-queue', async (job) => {

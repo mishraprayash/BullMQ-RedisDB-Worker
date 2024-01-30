@@ -1,0 +1,9 @@
+{
+    "functions": {
+      "sendEmail": {
+        "handler": "sendEmail/index.js",
+        "memory": 128
+      }
+    }
+  }
+  
