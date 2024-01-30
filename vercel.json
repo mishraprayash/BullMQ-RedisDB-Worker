@@ -1,9 +1,9 @@
 {
-    "functions": {
-      "sendEmail": {
-        "handler": "sendEmail/index.js",
-        "memory": 128
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "sendEmail/index.js",
+      "use": "@vercel/node"
     }
-  }
-  
+  ]
+}
